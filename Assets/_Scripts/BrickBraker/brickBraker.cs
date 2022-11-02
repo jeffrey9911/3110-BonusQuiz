@@ -19,6 +19,7 @@ public class brickBraker : MonoBehaviour
 
     public static void Restore(Vector3 pos)
     {
+        /*
         for(int i = 0; i < _objects.Count; i++)
         {
             if (_objects[i].position == pos)
@@ -26,5 +27,6 @@ public class brickBraker : MonoBehaviour
                 Instantiate(_objects[i]);
             }
         }
+        */
     }
 }
