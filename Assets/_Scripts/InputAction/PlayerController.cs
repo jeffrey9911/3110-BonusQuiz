@@ -8,6 +8,7 @@ using UnityEngine.InputSystem.LowLevel;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController Instance;
 
     public PlayerAction _playerAction;
     Vector2 _moveVec;
@@ -34,6 +35,12 @@ public class PlayerController : MonoBehaviour
 
     iCommand _command;
 
+    private void Awake()
+    {
+        if (!Instance)
+            Instance = this;
+    }
+
     void Start()
     {
         _playerAction = PlayerInputController.Instance._playerAction;
@@ -46,12 +53,7 @@ public class PlayerController : MonoBehaviour
         _playerAction.PlayerControl.Jump.performed += context => PlayerJump();
         _playerAction.PlayerControl.Attack.performed += context => PlayerAttack();
 
-        foreach (Transform brickTransform in LevelBrick)
-        {
-            brick singleBrick = brickTransform.GetComponent<brick>();
-
-            _bricks.Add(singleBrick);
-        }
+        SearchBricks();
     }
 
     // Update is called once per frame
@@ -123,14 +125,43 @@ public class PlayerController : MonoBehaviour
 
     private void PlayerAttack()
     {
+        GameObject _brickToDestroy = null;
+        int index = 0;
         for(int i = 0; i < _bricks.Count; i++)
         {
             if (Vector3.Distance(_bricks[i].transform.position, this.transform.position) < 1.0)
             {
-                _command = new BrakeBrickCommand(_bricks[i].transform.position, _bricks[i].transform);
-                CommandInvoker.AddCommand(_command);
-                GameObject.Destroy(_bricks[i].gameObject);
+                if(_brickToDestroy == null)
+                {
+                    _brickToDestroy = _bricks[i].gameObject;
+                    index = i;
+                }
+                else if(Vector3.Distance(_bricks[i].transform.position, this.transform.position) < Vector3.Distance(_brickToDestroy.transform.position, this.transform.position))
+                {
+                    _brickToDestroy = _bricks[i].gameObject;
+                    index = i;
+                }
             }
+        }
+
+        if(_brickToDestroy != null)
+        {
+            _command = new BrakeBrickCommand(_brickToDestroy.transform.position, _brickToDestroy.transform);
+            CommandInvoker.AddCommand(_command);
+
+            _brickToDestroy.SetActive(false);
+
+            _bricks.RemoveAt(index);
+        }
+    }
+
+    public void SearchBricks()
+    {
+        foreach (Transform brickTransform in LevelBrick)
+        {
+            brick singleBrick = brickTransform.GetComponent<brick>();
+
+            _bricks.Add(singleBrick);
         }
     }
 }

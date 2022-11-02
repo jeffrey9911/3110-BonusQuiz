@@ -13,6 +13,8 @@ public class CommandInvoker : MonoBehaviour
 
     static int counter;
 
+    public GameObject _birckObj;
+
     private void Start()
     {
         commandBuffer = new Queue<iCommand> ();

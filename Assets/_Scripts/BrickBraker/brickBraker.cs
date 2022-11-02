@@ -15,18 +15,19 @@ public class brickBraker : MonoBehaviour
         }
 
         _objects.Add(newObject);
+        //Debug.Log(newObject);
     }
 
     public static void Restore(Vector3 pos)
     {
-        /*
+        //Debug.Log(pos);
         for(int i = 0; i < _objects.Count; i++)
         {
             if (_objects[i].position == pos)
             {
-                Instantiate(_objects[i]);
+                _objects[i].gameObject.SetActive(true);
             }
         }
-        */
+        PlayerController.Instance.SearchBricks();
     }
 }
