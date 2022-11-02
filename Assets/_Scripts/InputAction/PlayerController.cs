@@ -28,6 +28,12 @@ public class PlayerController : MonoBehaviour
 
     public Transform _spawnPos;
 
+    public List<brick> _bricks = new List<brick>();
+
+    public Transform LevelBrick;
+
+    iCommand _command;
+
     void Start()
     {
         _playerAction = PlayerInputController.Instance._playerAction;
@@ -40,6 +46,12 @@ public class PlayerController : MonoBehaviour
         _playerAction.PlayerControl.Jump.performed += context => PlayerJump();
         _playerAction.PlayerControl.Attack.performed += context => PlayerAttack();
 
+        foreach (Transform brickTransform in LevelBrick)
+        {
+            brick singleBrick = brickTransform.GetComponent<brick>();
+
+            _bricks.Add(singleBrick);
+        }
     }
 
     // Update is called once per frame
@@ -111,6 +123,14 @@ public class PlayerController : MonoBehaviour
 
     private void PlayerAttack()
     {
-
+        for(int i = 0; i < _bricks.Count; i++)
+        {
+            if (Vector3.Distance(_bricks[i].transform.position, this.transform.position) < 1.0)
+            {
+                _command = new BrakeBrickCommand(_bricks[i].transform.position, _bricks[i].transform);
+                CommandInvoker.AddCommand(_command);
+                GameObject.Destroy(_bricks[i].gameObject);
+            }
+        }
     }
 }

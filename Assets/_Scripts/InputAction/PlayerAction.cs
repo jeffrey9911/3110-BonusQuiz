@@ -53,6 +53,15 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UndoBrake"",
+                    ""type"": ""Button"",
+                    ""id"": ""2dd67648-1db8-46b8-95d3-57488eddd1dc"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -132,6 +141,17 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6dbd407d-f5e8-4239-ba47-0a36116b9483"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UndoBrake"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -143,6 +163,7 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
         m_PlayerControl_Move = m_PlayerControl.FindAction("Move", throwIfNotFound: true);
         m_PlayerControl_Attack = m_PlayerControl.FindAction("Attack", throwIfNotFound: true);
         m_PlayerControl_Jump = m_PlayerControl.FindAction("Jump", throwIfNotFound: true);
+        m_PlayerControl_UndoBrake = m_PlayerControl.FindAction("UndoBrake", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -205,6 +226,7 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
     private readonly InputAction m_PlayerControl_Move;
     private readonly InputAction m_PlayerControl_Attack;
     private readonly InputAction m_PlayerControl_Jump;
+    private readonly InputAction m_PlayerControl_UndoBrake;
     public struct PlayerControlActions
     {
         private @PlayerAction m_Wrapper;
@@ -212,6 +234,7 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_PlayerControl_Move;
         public InputAction @Attack => m_Wrapper.m_PlayerControl_Attack;
         public InputAction @Jump => m_Wrapper.m_PlayerControl_Jump;
+        public InputAction @UndoBrake => m_Wrapper.m_PlayerControl_UndoBrake;
         public InputActionMap Get() { return m_Wrapper.m_PlayerControl; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -230,6 +253,9 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
                 @Jump.started -= m_Wrapper.m_PlayerControlActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_PlayerControlActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_PlayerControlActionsCallbackInterface.OnJump;
+                @UndoBrake.started -= m_Wrapper.m_PlayerControlActionsCallbackInterface.OnUndoBrake;
+                @UndoBrake.performed -= m_Wrapper.m_PlayerControlActionsCallbackInterface.OnUndoBrake;
+                @UndoBrake.canceled -= m_Wrapper.m_PlayerControlActionsCallbackInterface.OnUndoBrake;
             }
             m_Wrapper.m_PlayerControlActionsCallbackInterface = instance;
             if (instance != null)
@@ -243,6 +269,9 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
+                @UndoBrake.started += instance.OnUndoBrake;
+                @UndoBrake.performed += instance.OnUndoBrake;
+                @UndoBrake.canceled += instance.OnUndoBrake;
             }
         }
     }
@@ -252,5 +281,6 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+        void OnUndoBrake(InputAction.CallbackContext context);
     }
 }

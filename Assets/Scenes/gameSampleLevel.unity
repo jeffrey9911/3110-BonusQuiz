@@ -179,6 +179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -186,6 +190,16 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 93403722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &104776590 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 1184594508}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &152447085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 1624280001}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &207468665
 PrefabInstance:
@@ -243,6 +257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -250,6 +268,16 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 207468665}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &226976738 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 1104049659}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &229244616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 565579181}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &270043402
 PrefabInstance:
@@ -307,6 +335,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -315,6 +347,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 270043402}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &279970739 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 207468665}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &279970743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279970739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &284730722
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,6 +544,7 @@ GameObject:
   - component: {fileID: 307623215}
   - component: {fileID: 307623214}
   - component: {fileID: 307623216}
+  - component: {fileID: 307623217}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -543,6 +593,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 100
   _healthText: {fileID: 1282049284}
+--- !u!114 &307623217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307623213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4478ad128672c074bbde3d7b896533c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &352711430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 1619051216}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &404808351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -599,6 +666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -606,6 +677,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 404808351}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &405316698 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 1752136009}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &414236025
 GameObject:
@@ -747,6 +823,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -754,6 +834,21 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 440009853}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &475097575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 1666141497}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &543317491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 639377384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &555847158 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 688734546}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &565579181
 PrefabInstance:
@@ -811,6 +906,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -819,6 +918,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 565579181}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &565579186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229244616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &588164249
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,6 +1063,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -960,6 +1075,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 639377384}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &639377389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543317491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &639997029
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,6 +1181,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &677188744 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 1756865712}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &688734546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1110,6 +1242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -1117,6 +1253,23 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 688734546}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &688734551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555847158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &693844666 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 1507081882}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &710095371
 PrefabInstance:
@@ -1173,6 +1326,10 @@ PrefabInstance:
     - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
       propertyPath: m_Name
       value: Cube_Bricks (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -1238,6 +1395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -1301,6 +1462,10 @@ PrefabInstance:
     - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
       propertyPath: m_Name
       value: Cube_Bricks (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -1366,6 +1531,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -1430,6 +1599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -1438,6 +1611,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 833175499}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &908645988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 817035215}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &908645992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908645988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &914943356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1493,6 +1683,10 @@ PrefabInstance:
     - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
       propertyPath: m_Name
       value: Cube_Bricks (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -1558,6 +1752,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -1566,6 +1764,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 936106115}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &938031371 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 833175499}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &938031375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938031371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &964274565
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1621,6 +1836,10 @@ PrefabInstance:
     - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
       propertyPath: m_Name
       value: Cube_Bricks (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -1686,6 +1905,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -1694,6 +1917,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 1000097682}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1001287882 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 1478468640}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1018375326 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 404808351}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1018375330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018375326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1066100270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1749,6 +1994,10 @@ PrefabInstance:
     - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
       propertyPath: m_Name
       value: Cube_Bricks (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -1814,6 +2063,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -1822,6 +2075,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 1104049659}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1104049664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226976738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1165626826 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 710699392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1165626830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165626826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1184594508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1878,6 +2160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -1886,6 +2172,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 1184594508}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1184594513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104776590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1203486411 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 746420904}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1203486415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203486411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1234422262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 1694011161}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1262208501 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 964274565}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1262208505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262208501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1277994135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1942,6 +2279,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -1949,6 +2290,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 1277994135}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1280139096 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 1626882031}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1282049282
 GameObject:
@@ -2087,6 +2433,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282049282}
   m_CullTransparentMesh: 1
+--- !u!1 &1289084948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 1467423131}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1289242775 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 1066100270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1289242779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289242775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1327654283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2103,6 +2471,10 @@ PrefabInstance:
       propertyPath: _spawnPos
       value: 
       objectReference: {fileID: 2136233104}
+    - target: {fileID: 1426301267444093371, guid: 9dcc5dd937435274f872d713f8518940, type: 3}
+      propertyPath: LevelBrick
+      value: 
+      objectReference: {fileID: 299721461}
     - target: {fileID: 1426301267444093371, guid: 9dcc5dd937435274f872d713f8518940, type: 3}
       propertyPath: _jumpSpeed
       value: 6
@@ -2162,6 +2534,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dcc5dd937435274f872d713f8518940, type: 3}
+--- !u!1 &1350270205 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 1579014351}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1368736125
 GameObject:
   m_ObjectHideFlags: 0
@@ -2260,6 +2637,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1451377129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 270043402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1451377133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451377129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1467423131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2316,6 +2710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -2324,6 +2722,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 1467423131}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1467423136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289084948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1478468640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2380,6 +2790,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -2388,6 +2802,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 1478468640}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1478468645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001287882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1486421645 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 936106115}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1486421649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486421645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1507081882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2444,6 +2887,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -2452,6 +2899,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 1507081882}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1507081887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693844666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1558765478 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 914943356}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1558765482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558765478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1579014351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2508,6 +2984,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -2516,6 +2996,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 1579014351}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1579014356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350270205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1603653554 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 440009853}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1603653558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603653554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1619051216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2572,6 +3081,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -2580,6 +3093,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 1619051216}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1619051221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352711430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1624280001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2636,6 +3161,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -2644,6 +3173,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 1624280001}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1624280006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152447085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1626882031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2700,6 +3241,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -2707,6 +3252,23 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 1626882031}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1626882036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280139096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1631266683 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 2085596964}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1632602715
 PrefabInstance:
@@ -2763,6 +3325,10 @@ PrefabInstance:
     - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
       propertyPath: m_Name
       value: Cube_Bricks (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -2828,6 +3394,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -2836,6 +3406,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 1666141497}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1666141502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475097575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1679579240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 710095371}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1679579244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679579240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1694011161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2892,6 +3491,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -2900,6 +3503,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 1694011161}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1694011166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234422262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1752136009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2956,6 +3571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -2964,6 +3583,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 1752136009}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1752136014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405316698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1756865712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3020,6 +3651,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -3028,6 +3663,74 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 1756865712}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1756865717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677188744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1953872213 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 1632602715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1953872217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953872213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2030343332 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 2136736285}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2038754439 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 1000097682}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2038754443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038754439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2053622716 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 93403722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2053622720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053622716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2085596964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3084,6 +3787,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -3092,6 +3799,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 2085596964}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2085596969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631266683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2103657589
 GameObject:
   m_ObjectHideFlags: 0
@@ -3256,6 +3975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Bricks (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
@@ -3264,6 +3987,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62173344461668249, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
   m_PrefabInstance: {fileID: 2136736285}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2136736290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030343332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2145213684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 1277994135}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2145213688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145213684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2819869053204606166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3319,6 +4071,10 @@ PrefabInstance:
     - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
       propertyPath: m_Name
       value: Cube_Bricks
+      objectReference: {fileID: 0}
+    - target: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+      propertyPath: m_TagString
+      value: Brakable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -3387,6 +4143,23 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c7c332d1abb9f748a6023855148cae9, type: 3}
+--- !u!1 &3221513037121997301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835192328134255907, guid: 283b5e99d7698144d8c5d50eae809d20, type: 3}
+  m_PrefabInstance: {fileID: 2819869053204606166}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4014362556140218402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3221513037121997301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ca648da40ba045951243d99c775ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6099980379237271718
 PrefabInstance:
   m_ObjectHideFlags: 0
