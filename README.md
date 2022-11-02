@@ -24,3 +24,12 @@
   - Health system is created and linked to the UI text. If the player hits the bee, he would lose 10 health. If the player hits the skull, he would lose 50 health.
 - Brick restore system
   - Brick system can restore the destroyed bricks that were broken by the player.
+
+## Some comments added
+The class time is way too short to build a fully functioning game demo from nothing. The work was rushed during class time so there are some bugs. I am really into this activity so I fixed those bugs after class and created a specific branch called *AfterClassWork*. The second executable is also released for it.
+### What I did in second release:
+- Bugs are fixed and undo system is now fully working.
+- The restored bricks now can be destoryed again.
+- Now player can destory only one brick that is the nearest to the player. 
+- Quit button added to quit the application.
+### These are just to prove my knowledge and also implementation of it. Hopefully I can get some more marks :) 
